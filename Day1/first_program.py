@@ -5,6 +5,7 @@
 print ("Enter The Current Year")
 num1 = int( input("Enter current year: "))
 
+
 #code for entering current year
 
 print("Enter Your Year Of Birth")
