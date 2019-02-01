@@ -1,18 +1,20 @@
-# Day 2 challenge 2 #
-letterA = int(input("Enter First number: "))
-letterB = int(input("Enter Second number: "))
-new =  int(letterA + letterB)
+def fizzbuzz(word1,word2):
+    words1 = len(word1)
+    words2 = len(word2)
+    words = words1+ words2
 
-def Cyber(letterA , letterB):
-    Cyber(new)
+    if( words % 5 == 0 and words % 3 == 0 ):
+        print("FIZZBUZZ")
+    elif( words % 5 == 0):
+        print("BUZZ")
+    elif( words % 3 == 0  ):
+        print("FIZZ")
+    else:
+        print("NOT KNOWN THEREFORE ERROR .PLIZ TRY AGAIN.")
+    return words
 
 
-if((new % 5 == 0) and (new % 3 == 0) ):
-    print("FIZZBUZZ")
-elif(new % 5 == 0):
-    print("BUZZ")
-elif(new % 3 == 0):
-    print("FIZZ")
-else:
-    print("NOT KNOWN BY THE PROGRAMMER")
+words1 = input("enter string: ")
+words2 = input("enter string: ")
 
+print(fizzbuzz(words1,words2))

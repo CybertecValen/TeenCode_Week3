@@ -5,6 +5,6 @@ numbers = dict()
 # for loop that will loop the numbers stored in the dict() #
 for values in range(1,15):
     numbers[values] = values**2  # calculation#
-    print(numbers)
+print(numbers)
 
 
